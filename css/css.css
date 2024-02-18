@@ -262,14 +262,11 @@ p, .p {
 }
 
 /* Force Pali to display on top of English on smaller screens */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 595px) {
 	.pairs tr {
 		display: flex;
 		flex-flow: column-reverse wrap;
 	}
-
-
- 
  
 	.pairs {
 		table-layout: auto;
@@ -910,7 +907,7 @@ input, select, textarea, .inputbox {
 /* Tables ---*/
 
 table.plain, th, td {
-	margin-left:40px;
+	margin-left: 3px;
 	font-size: 110%;
 /*	border: solid 1px #ddd;*/
 	text-align: left;
@@ -920,11 +917,11 @@ table {
 	border-collapse: collapse;
 }
 
-th { font-weight: bold; padding: 5px; text-align: left; }
+th { font-weight: bold; padding: 2px; text-align: left; }
 
 td {
 font-size: 120%;
-padding: 5px;
+padding: 2px;
 word-wrap: break-word;
 } /* Make font larger in java generated table English and Pali */
 
@@ -946,7 +943,7 @@ thead tr th a:active { color: #fff;}
 /* Format Sutta Indexes */
 
 table.suttalist {
-	margin-left:10px;
+	margin-left:5px;
 	font-size: 110%;
  overflow: hidden;
 }
@@ -1227,11 +1224,12 @@ font-weight: bold;
 
 .meaning {
  position:absolute;
- visibility: hidden;
+ visibility:hidden;
  display:block;
  opacity: 0;
  bottom: 2.2em;
- left: -30em;
+ margin-left: 40px;
+ margin-right: auto;
  z-index: 1001;
  border: 1px solid darkorchid;
  background: #fff3d6;
@@ -1244,7 +1242,7 @@ font-weight: bold;
  padding: 0.1em 0.5em;
  margin-top:1em;
  min-width:20em;
- max-width:100em;
+ max-width:550px;
  height: auto;
  transition: 100ms;
 }
@@ -1253,7 +1251,6 @@ font-weight: bold;
  background: #a52a2a;
  border: 2px solid #E6BFAD;
 }
-
 
 .lookup:hover .meaning {
  visibility:visible;
@@ -1439,7 +1436,7 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
   background-size: cover; /* Or contain, depending on your preference */
 }
 
-    @media screen and (min-width: 1640px) {
+@media screen and (min-width: 1640px) {
   .container {
   margin: auto;
   width: 50%; 
