@@ -108,20 +108,21 @@ function lookupWord(word){
   word = word.replace(/[’”]/g, "").replace(/ṁ/g, "ṃ");
   console.log("after: ", word)
   if(word in dpd_i2h){
-    out+="<strong>"+word+'</strong><br><ol style="line-height: 1em;">'
+    out+="<strong>" + word + '</strong><br><ul style="line-height: 1em; padding-left: 15px;">'
     for (const headword of dpd_i2h[word]){
       if(headword in dpd_ebts){
-        out+="<li>"+dpd_ebts[headword]+"</li>"
+        out+='<li>' + headword + '. ' + dpd_ebts[headword] + '</li>'
       }
     }
+    out += "</ul>"
   }
 
   if(word in dpd_deconstructor){
-    out+="<strong>"+word+'</strong><br><ol style="line-height: 1em;">'
-    out+="<li>"+dpd_deconstructor[word]+"</li>"
+    out+="<strong>" + word+ '</strong><br><ul style="line-height: 1em; padding-left: 15px;">'
+    out+="<li>" + dpd_deconstructor[word] + "</li>"
   }
 
-  out+="</ol>"
+  out+="</ul>"
 
   return out.replace(/ṃ/g, "ṁ")
 }
