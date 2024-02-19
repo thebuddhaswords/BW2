@@ -30,7 +30,7 @@ function generateMarkupCallback() {
 }
 
 var paliRex = /([aiueokgcjtdnpbmyrlvshāīūṭḍṅṇṁñḷ’­”]+)/i;
-var splitRex = /([^  ,. – —:;?!"'“‘-]+)/;
+var splitRex = /([^  ,. – —:;?!“‘-]+)/;
 function toLookupMarkup(startNode)
 {
  var parts, i, out = "", proxy, node;
@@ -105,7 +105,7 @@ function lookupWord(word){
   let out ="";
   console.log("---")
   console.log("before: ", word)
-  word = word.replace(/[’”]/g, "").replace(/ṁ/g, "ṃ");
+  word = word.replace(/[’”'"]/g, "").replace(/ṁ/g, "ṃ");
   console.log("after: ", word)
   if(word in dpd_i2h){
     out+="<strong>" + word + '</strong><br><ul style="line-height: 1em; padding-left: 15px;">'
