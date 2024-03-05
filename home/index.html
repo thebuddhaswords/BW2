@@ -84,10 +84,10 @@
  				<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Piṭaka</a>
  					<ul>
  						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
- 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhaṅga</a></li>
  						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
  						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Pātimokkha</a></li>
- 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhunī Vibhanga</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhunī Vibhaṅga</a></li>
  					</ul>
  				</li>
  			</ul>
@@ -134,7 +134,7 @@
 
 <p>For those who want to install The Buddha's Words on a PC or Android device, information has been added on the <a href="../home/help.html">Help Page</a> to assist them.</p>
 
-<p>Ajahn Thanissaro's Buddhist Monastic Code (BMC) has been removed from the site so that the content is more accurately "the word of the Buddha" rather than comtemporary teachers. Copies of the BMC in .mobi. epub and pdf formats can be downloaded free from <a href="https://tinyurl.com/3ff5zx8u" target="_blank">here.</a></p>
+<p>Ajahn Thanissaro's Buddhist Monastic Code (BMC) has been removed from the site so that the content is more accurately "the word of the Buddha" rather than the teachings of contemporary teachers. Copies of the BMC in .mobi. epub and pdf formats can be downloaded free from <a href="https://tinyurl.com/3ff5zx8u" target="_blank">here.</a></p>
 
 <h3 class="left-align">The Control Panel</h3>
 
@@ -239,7 +239,7 @@
 
 <br>
 
-<p>Last updated: 25th February 2024</p>
+<p>Last updated: 5th March 2024</p>
 
 </div> <!-- End page content -->
 </div> <!-- end content container bwcontainer4 -->
@@ -254,6 +254,13 @@
 </footer>
  
  <!-- Scripts -->
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log('Service Worker registered'))
+      .catch((error) => console.error('Error registering Service Worker', error));
+  }
+</script>
 
 <script>
  // Script to turn Pali Lookup on and off

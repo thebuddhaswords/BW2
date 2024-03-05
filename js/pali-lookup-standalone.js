@@ -102,7 +102,10 @@ function lookupWord(word) {
   // display the html string as a popup
   // TODO: the words in the popup must be able to be recursively looked up by clicking on them in the same way as above.
   let out = "";
+  console.log("---")
+  console.log("before: ", word)
   word = word.replace(/[’”'"]/g, "").replace(/ṁ/g, "ṃ");
+  console.log("after: ", word)
   if (word in dpd_i2h) {
     out += "<strong>" + word + '</strong><br><ul style="line-height: 1em; padding-left: 15px;">'
     for (const headword of dpd_i2h[word]) {
@@ -112,11 +115,14 @@ function lookupWord(word) {
     }
     out += "</ul>"
   }
+
   if (word in dpd_deconstructor) {
     out += "<strong>" + word + '</strong><br><ul style="line-height: 1em; padding-left: 15px;">'
     out += "<li>" + dpd_deconstructor[word] + "</li>"
   }
+
   out += "</ul>"
+
   return out.replace(/ṃ/g, "ṁ")
 }
 

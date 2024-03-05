@@ -1443,7 +1443,7 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
   margin-top:10px;
   min-width: 1640px;
 }
-
+}
 
 
 /* The following rules are for assisting in the editing process by accentuating <hr> and heading elements. *\
@@ -1461,5 +1461,9 @@ hr, .pairs hr {
  background-color:lime;
 }
 
+@media screen and (min-width: 600px) {
+ h1,h2,h3,h4,h5,h6, .pairs h1, .pairs h3, .pairs h4, .pairs h5, .pairs h6 {
+ background-color: gold;
+}
 
 */
