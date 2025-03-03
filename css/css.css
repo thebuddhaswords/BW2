@@ -1,4 +1,3 @@
-/* css gathered into sections 20180313 */
 
 /* font converted using font-converter.net. thank you! */
 @font-face {
@@ -46,7 +45,7 @@ body {
 	z-index:1;
  max-width: 1640px;
  max-height: auto;
- margin: 10px 10px 10px 10px;
+ margin: 2px 2px 2px 2px;
  border-top-style: 1px solid #fff;
  border-right-style: 1px solid #fff;
  border-bottom-style: none;
@@ -283,20 +282,7 @@ p, .p {
 		font-weight: bold;
 	}
 }
-/* ================= used only in bmc ================= */
 
-ul, ol { margin-bottom: 0.5em; margin-top:0; }
-li { padding: 0; margin: 0 0 .5em 0 }
-li.single { margin:0; }
-ul.dec, ol.dec { list-style-type:decimal; }
-ul.alph, ol.alph { list-style-type: lower-alpha; }
-ul.dot { list-style-type: disc; }
-ul.circ { list-style-type: circle; }
-ul.circ li { margin-bottom:0; }
-ul.none { list-style-type:none;}
-blockquote { margin: 0 2em .5em 2em}
-
-/* ================= end of bmc stuff ================= */
 /* unvisited link */
 a:link {
   color: blue;
@@ -550,6 +536,9 @@ color: blue;
     display: block;
     width: 100%;
     text-align: center;
+  }
+  .body {
+   margin-left: 0;
   }
 }
 /*Sub navigation */
@@ -1230,7 +1219,7 @@ font-weight: bold;
  bottom: 2.2em;
  margin-left: 40px;
  margin-right: auto;
- z-index: 1001;
+ z-index: 2002;
  border: 1px solid darkorchid;
  background: #fff3d6;
  border-radius: 5px;
@@ -1360,9 +1349,8 @@ hr, .pairs hr {
     height: 16px;
     position: absolute;
     border: 1px solid rgba(255,255,255,0);
-    position: static;
-    top:20px;
-    left:40px;
+    top:0px;
+    left:0px;
 }
 
 .light-mode-button:focus {
@@ -1372,7 +1360,7 @@ hr, .pairs hr {
 .light-mode-button span:nth-child(1) {
     position: absolute;
     top:17px;
-    left:21px;
+    left:0px;
     width: 30px;
     height:16px;
     background-color: #d6d7db;
@@ -1385,7 +1373,7 @@ hr, .pairs hr {
 .light-mode-button span:nth-child(2) {
     position: absolute;
     top:20px;
-    left:24px;
+    left:4px;
     width: 10px;
     height: 10px;
     background-color: #fff;
@@ -1396,7 +1384,7 @@ hr, .pairs hr {
 
 /* Light & Dark Mode Styles */ 
 body[light-mode=dark] .light-mode-button span:nth-child(2) {
-    left: 37px;
+    left: 17px;
     background-color: #141516;
 }
 
@@ -1409,18 +1397,18 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
   cursor: pointer;
   position: absolute;
   top:16px;
-  left:55px;
+  left:35px;
 }
 
 .w3-image {
     max-width: 100%;
     height: auto;
-    margin-left: 30px; 
+    margin-left: 0px; 
 	    background-color: #FFF3D6;
 }
 
  .w3-padding {
-    padding: 0px 16px!important;
+    padding: 0px 8px!important;
 }
 
 .centered {
@@ -1449,6 +1437,7 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
 /* The following rules are for assisting in the editing process by accentuating <hr> and heading elements. *\
 /* For Publishing ... The end comment needs to be at the bottom of this page.
 /* For Editing ... Move the end comment at the end of this page to the end of this line.   
+
  
 
  h1,h2,h3,h4,h5,h6, .pairs h1, .pairs h3, .pairs h4, .pairs h5, .pairs h6 {
@@ -1465,5 +1454,4 @@ hr, .pairs hr {
  h1,h2,h3,h4,h5,h6, .pairs h1, .pairs h3, .pairs h4, .pairs h5, .pairs h6 {
  background-color: gold;
 }
-
 */
