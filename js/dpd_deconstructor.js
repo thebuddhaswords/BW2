@@ -8691,6 +8691,7 @@ let dpd_deconstructor = {
   "todeyyāti": "todeyya + iti",
   "tyatthu": "te + atthu",
   "tyamha": "te + amha",
+  "tyassu": "te + assu",
   "tyassudaṃ": "te + assudaṃ",
   "tyassume": "te + assu + ime",
   "tyāyaṃ": "te + ayaṃ",
