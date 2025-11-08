@@ -70,7 +70,7 @@ body[light-mode=dark] {
 #content,
 #footer,
 #breadcrumbs {
- padding: 15px;
+ padding:1px;
 }
 
 .bwcontainer {
