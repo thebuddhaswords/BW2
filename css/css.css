@@ -227,7 +227,7 @@ p, .p {
 .pairs {
 	table-layout: fixed;
 	width: 100%;
-	word-break: break-word;
+overflow-wrap: break-word;
 }
 
 .pairs h1, .pairs h3, .pairs h4, .pairs h5, .pairs h6 {
