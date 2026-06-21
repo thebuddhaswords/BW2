@@ -1432,11 +1432,14 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
   min-width: 1640px;
 }
 }
-
+hr, .pairs hr {
+ height:0px;
+ margin-bottom:0;
+ }
 
 /* The following rules are for assisting in the editing process by accentuating <hr> and heading elements. *\
 /* For Publishing ... The end comment needs to be at the bottom of this page.
-/* For Editing ... Move the end comment at the end of this page to the end of this line.   
+/* For Editing ... Move the end comment at the end of this page to the end of this line.   */
 
  
 
@@ -1455,4 +1458,3 @@ hr, .pairs hr {
  background-color: gold;
 }
 
-*/
